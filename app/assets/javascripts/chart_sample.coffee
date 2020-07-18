@@ -18,7 +18,7 @@ window.draw_graph = ->
             labels: labels
             datasets: [{
                 label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                data: gon.date,
                 backgroundColor: bgColors,
                 borderColor: bdColors,
                 borderWidth: 1
