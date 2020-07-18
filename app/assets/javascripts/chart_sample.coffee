@@ -15,14 +15,18 @@ window.draw_graph = ->
     myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: labels
             datasets: [{
                 label: '# of Votes',
-                data: gon.date,
+                data: gon.bardata,
                 backgroundColor: bgColors,
                 borderColor: bdColors,
                 borderWidth: 1
-            }]
+            }, {
+                label: 'Line Dataset',
+                data: gon.linedata,
+                type: 'line'
+            }],
+            labels: labels,
         },
         options: {
             scales: {
