@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'chart-js-rails', '~> 0.1.4'
 
 # Railsの変数を、javascriptで使える変数に変換してくれるgem
-gem 'gon', '~> 6.2.0'
+gem 'gon', '~> 6.4.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
